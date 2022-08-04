@@ -5,7 +5,7 @@ import {
   firebaseDeleteFood,
   firebaseEmptyUserCart,
   firebaseFetchAllCartItems,
-  firebaseFetchFoodItems,
+  // firebaseFetchFoodItems,
   firebaseGetUser,
   firebaseLogout,
   firebaseUpdateCartItem,
@@ -15,6 +15,7 @@ import {
 
 import { MdShoppingBasket } from "react-icons/md";
 import { toast } from "react-toastify";
+import mealdb from "../apis/mealdb";
 
 export const addToCart = async (
   cartItems: cartItem[],
@@ -81,11 +82,12 @@ export const fetchUserCartData = async (user: any, dispatch: any) => {
 };
 
 export const fetchFoodData = async (dispatch: any) => {
-  await firebaseFetchFoodItems()
+  await mealdb
+    .get("/search.php?f=a")
     .then((data) => {
       dispatch({
         type: "SET_FOOD_ITEMS",
-        foodItems: data,
+        foodItems: data.data.meals,
       });
     })
     .then(() => {})

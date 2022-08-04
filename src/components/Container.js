@@ -32,7 +32,7 @@ const Container = ({ scrollOffset, col = false, items = [], className }) => {
       {items &&
         items.map((item) => (
           <SingleFoodItem
-            key={item.id}
+            key={item.idMeal}
             item={item}
             col={col}
             admin={isAdmin(user)}

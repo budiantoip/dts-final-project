@@ -2,7 +2,7 @@ import { useStateValue } from "../context/StateProvider"
 
 export const FilterFood = (category) => {
     const [{foodItems}, dispatch] = useStateValue()
-    return foodItems?.filter((item) => item.category.toLowerCase() === category.toLowerCase())
+    return foodItems?.filter((item) => item.strCategory.toLowerCase() === category.toLowerCase())
 }
 
 export const GetFoodById = (id) => {
