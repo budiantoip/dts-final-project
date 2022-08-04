@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Action from "./action";
+// import Action from "./action";
 export const SingleFoodItem = ({
   item,
   col,
