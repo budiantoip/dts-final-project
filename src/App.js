@@ -8,8 +8,17 @@ import { AnimatePresence } from "framer-motion";
 import { ToastContainer } from "react-toastify";
 import Header from './components/Header/Header';
 import Footer from './components/Footer';
+import { dispatchUsers, fetchFoodData, fetchUserCartData, isAdmin } from "./utils/functions";
+import { useEffect } from "react";
+import { useStateValue } from "./context/StateProvider";
 
 function App() {
+  const [{ showCart, user, foodItems, cartItems, adminMode }, dispatch] =
+    useStateValue();
+
+  useEffect(() => {
+    fetchFoodData(dispatch);
+  }, []);
   return (
     <AnimatePresence exitBeforeEnter>
       <ToastContainer />

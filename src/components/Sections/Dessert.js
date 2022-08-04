@@ -4,8 +4,8 @@ import Container from "../Container";
 import { FilterFood } from "../../utils/filters";
 import { useState } from "react";
 
-const Fruits = () => {
-  const fruits = FilterFood("fruits");
+const Desserts = () => {
+  const desserts = FilterFood("Dessert");
   const [scrollValue, setScrollValue] = useState(0);
 
   return (
@@ -20,10 +20,10 @@ const Fruits = () => {
       <Container
         className='bg-containerbg'
         scrollOffset={scrollValue}
-        items={fruits}
+        items={desserts}
       />
     </section>
   );
 };
 
-export default Fruits;
+export default Desserts;

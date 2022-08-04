@@ -75,7 +75,7 @@ export const firebaseRemoveUploadedImage = (
   promise
 ) => {
   const dummy =
-    "https://firebasestorage.googleapis.com/v0/b/bentilzone-restaurant.appspot.com/o/Images";
+    "https://firebasestorage.googleapis.com/v0/b/food-84077.appspot.com/o/Images";
   promise(true);
   toast.info(`Removing Image.....`, {
     icon: <MdOutlineCloudUpload className='text-blue-600' />,
