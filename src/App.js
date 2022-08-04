@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import HomePage from './containers/HomePage';
 import LoginPage from './containers/LoginPage';
 import RegisterPage from './containers/RegisterPage';
+import ProfilePage from "./containers/ProfilePage";
 import { AnimatePresence } from "framer-motion";
 import { ToastContainer } from "react-toastify";
 import Header from './components/Header/Header';
@@ -33,6 +34,7 @@ function App() {
             <Route path='/*' element={<HomePage />} />
             <Route path='/login' element={<LoginPage />} />
             <Route path='/register' element={<RegisterPage />} />
+            <Route path='/profile' element={<ProfilePage />} />
           </Routes>
           <Footer />
         </main>
