@@ -1,6 +1,6 @@
 // import React from 'react'
 import { Link } from "react-router-dom";
-import { MdShoppingBasket } from "react-icons/md";
+// import { MdShoppingBasket } from "react-icons/md";
 import { motion } from "framer-motion";
 import { useStateValue } from "../../context/StateProvider";
 

@@ -2,10 +2,10 @@ import {
   GiMeat,
   GiChickenOven,
   GiBeerBottle,
-  GiBowlOfRice,
+  // GiBowlOfRice,
 } from "react-icons/gi";
-import { MdOutlineIcecream } from "react-icons/md";
-import { FaFish } from "react-icons/fa";
+// import { MdOutlineIcecream } from "react-icons/md";
+// import { FaFish } from "react-icons/fa";
 
 export const Categories = [
   {

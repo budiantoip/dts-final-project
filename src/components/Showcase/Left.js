@@ -1,6 +1,6 @@
 import React from "react";
 import { BikeDelivery } from "../Assets";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 const Left = () => {
   return (
     <div className="py-2 flex-1 flex flex-col items-start justify-center gap-3">

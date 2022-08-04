@@ -1,6 +1,7 @@
 import Container from "../Container";
 import { FilterFood } from "../../utils/filters";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useStateValue } from "../../context/StateProvider";
 import Filters from "../Filters/Filters";
 import { Title } from "./index";

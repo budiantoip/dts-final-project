@@ -7,7 +7,7 @@ import {
   BsTwitter,
   BsInstagram,
   BsFacebook,
-  BsDribbble,
+  // BsDribbble,
 } from "react-icons/bs";
 import { motion } from "framer-motion";
 const Footer = () => {

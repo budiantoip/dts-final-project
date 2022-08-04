@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import { Route, Routes } from "react-router-dom";
 import HomePage from './containers/HomePage';
@@ -8,7 +8,8 @@ import { AnimatePresence } from "framer-motion";
 import { ToastContainer } from "react-toastify";
 import Header from './components/Header/Header';
 import Footer from './components/Footer';
-import { dispatchUsers, fetchFoodData, fetchUserCartData, isAdmin } from "./utils/functions";
+// import { dispatchUsers, fetchFoodData, fetchUserCartData, isAdmin } from "./utils/functions";
+import { fetchFoodData } from "./utils/functions";
 import { useEffect } from "react";
 import { useStateValue } from "./context/StateProvider";
 
