@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Food Catalog",
+  "name": "Food Catalog Application",
   "icons": [
     {
       "src": "favicon.ico",
