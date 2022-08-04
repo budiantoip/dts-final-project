@@ -83,7 +83,7 @@ export const fetchUserCartData = async (user: any, dispatch: any) => {
 
 export const fetchFoodData = async (dispatch: any) => {
   await mealdb
-    .get("/search.php?f=b")
+    .get("/search.php?f=c")
     .then((data) => {
       dispatch({
         type: "SET_FOOD_ITEMS",
