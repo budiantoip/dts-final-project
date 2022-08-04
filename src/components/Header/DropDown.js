@@ -20,7 +20,7 @@ const DropDown = ({ user }: { user: any;}) => {
       <p className="px-10 py-2 flex items-center gap-3 bg-slate-100 transition-all duration-100 capitalize ease-in-out text-base text-headingColor">
         {user?.displayName || user?.email}
       </p>
-      {isAdmin(user) && (
+      {/* {isAdmin(user) && (
         <Link
         className="cursor-pointer px-10 py-2 flex items-center gap-3 hover:bg-slate-100 transition-all duration-100 ease-in-out text-base text-textColor"
         to={"/admin"}
@@ -29,7 +29,7 @@ const DropDown = ({ user }: { user: any;}) => {
           Administrator
           <RiAdminLine />
         </Link>
-      )}
+      )} */}
       <Link to={'/profile'} className="px-10 py-2 flex items-center gap-3 bg-slate-100 transition-all duration-100 ease-in-out text-base text-headingColor">
         Profile <FaUserCog />
       </Link>
