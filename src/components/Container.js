@@ -42,7 +42,7 @@ const Container = ({ scrollOffset, col = false, items = [], className }) => {
         (!col ? (
           <Loader progress={"Fetching Food Items....."} />
         ) : (
-          <NotFound text='Fetching Food Items...' />
+          <NotFound text='No Food Items Available ' />
         ))}
       {items && items.length <= 0 && (
         <NotFound text='No Food Items Available ' />
