@@ -7,6 +7,7 @@ import RegisterPage from './containers/RegisterPage';
 import { AnimatePresence } from "framer-motion";
 import { ToastContainer } from "react-toastify";
 import Header from './components/Header/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path='/login' element={<LoginPage />} />
             <Route path='/register' element={<RegisterPage />} />
           </Routes>
+          <Footer />
         </main>
       </div>
     </AnimatePresence>
