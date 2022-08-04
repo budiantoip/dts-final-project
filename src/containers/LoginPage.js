@@ -50,12 +50,12 @@ const Login = () => {
           <ImageBox />
           <div className='w-full md:w-[30rem]'>
             <form className='p-2'>
-              <ProviderAuth />
+              {/* <ProviderAuth />
               <div className='flex items-center my-4 before:flex-1 before:border-t before:border-gray-300 before:mt-0.5 after:flex-1 after:border-t after:border-gray-300 after:mt-0.5'>
                 <p className='text-center text-textColor text-sm font-semibold mx-4 mb-0'>
                   OR
                 </p>
-              </div>
+              </div> */}
               <div className='mb-6'>
                 <input
                   type='text'
@@ -74,14 +74,14 @@ const Login = () => {
                 />
               </div>
 
-              <div className='flex justify-between items-center mb-6'>
-                <Link
-                  to='/'
-                  className='text-orange-600 hover:text-orange-700 focus:text-orange-700 active:text-orange-800 duration-200 transition ease-in-out'
-                >
-                  Forgot password?
-                </Link>
-              </div>
+                {/* <div className='flex justify-between items-center mb-6'>
+                  <Link
+                    to='/'
+                    className='text-orange-600 hover:text-orange-700 focus:text-orange-700 active:text-orange-800 duration-200 transition ease-in-out'
+                  >
+                    Forgot password?
+                  </Link>
+                </div> */}
 
               <motion.p
                 className='cursor-pointer flex items-center justify-center px-7 py-3 bg-gradient-to-br from-orange-400 to-orange-500 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-orange-600 hover:shadow-lg focus:bg-orange-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out w-full'
